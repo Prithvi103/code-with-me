@@ -12,6 +12,10 @@ Input:
 Output: 1->1->2->3->4->4->5->6
 """
 
+"""
+The idea is to maintain a heap which has all the heads of the different lists. The count variable is used in case if there is a tie between multiple heads.
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
