@@ -1,5 +1,7 @@
 """
-Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+Given an array nums of n integers, are there elements a, b, c in nums such
+that a + b + c = 0? Find all unique triplets in the array which gives the sum
+of zero.
 
 Note:
 
@@ -17,7 +19,15 @@ A solution set is:
 """
 
 """
-the popular solution is to sort the array first and then use a mid index to search either ways for complementing numbers which would bring the total to 0. The solution is not very intuitive and it's difficult to think of it on the feet. Hence, I decided to go for an easier solution where you just index all the numbers with their indexes in a dictionary and then find out if there are combinations. Indexing take O(n) and finding combinations of numbers takes O(n^2). Thus the time complexity is O(n^2). This passed 312/313 test cases and failed due to run time for the test case where there is an array of million zeros. I added a custom if case to just get accepted on the solution :D
+The popular solution is to sort the array first and then use a mid index to
+search either ways for complementing numbers which would bring the total to 0. 
+The solution is not very intuitive and it's difficult to think of it on the 
+feet. Hence, I decided to go for an easier solution where you just index all 
+the numbers with their indexes in a dictionary and then find out if there are 
+combinations. Indexing take O(n) and finding combinations of numbers takes O(
+n^2). Thus the time complexity is O(n^2). This passed 312/313 test cases and 
+failed due to run time for the test case where there is an array of million 
+zeros. I added a custom if case to just get accepted on the solution :D
 """
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:

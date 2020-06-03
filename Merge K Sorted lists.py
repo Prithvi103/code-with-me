@@ -1,5 +1,6 @@
 """
-Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its
+complexity.
 
 Example:
 
@@ -13,7 +14,8 @@ Output: 1->1->2->3->4->4->5->6
 """
 
 """
-The idea is to maintain a heap which has all the heads of the different lists. The count variable is used in case if there is a tie between multiple heads.
+The idea is to maintain a heap which has all the heads of the different lists. The count
+variable is used in case if there is a tie between multiple heads.
 """
 
 # Definition for singly-linked list.
