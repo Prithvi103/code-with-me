@@ -27,7 +27,7 @@ from another comment. Runs in O(1) run time with O(1) space.
 
 f(n) = 1/n                               -> 1st person picks his own seat
      + 1/n * 0                           -> 1st person picks last one's seat
-	 + (n-2)/n * (                       ->1st person picks one of seat from 2nd to (n-1)th
+	 + (n-2)/n * (                       -> 1st person picks one of seat from 2nd to (n-1)th
        1/(n-2) * f(n-1)                  -> 1st person pick 2nd's seat
        1/(n-2) * f(n-2)                  -> 1st person pick 3rd's seat
        ......
